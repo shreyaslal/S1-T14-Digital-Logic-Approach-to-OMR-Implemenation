@@ -44,7 +44,8 @@ This project combines the simplicity of digital logic with practical hardware de
 
 ### Block Diagram
 
-![Block Diagram](https://github.com/user-attachments/assets/de0f4ae0-6e94-4722-b747-2c86bf8f8df4)
+![Block Diagram](https://github.com/user-attachments/assets/22be5cba-bfe5-49bf-a465-d84a24e0d4fe)
+
 
 
 
