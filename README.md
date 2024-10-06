@@ -41,15 +41,21 @@ The traditional and manual evaluation of hundreds or thousands of OMR answer she
 - **Instant Result Display:** After the scanning process is complete, the total score and the positive score obtained by the student are displayed on seven-segment displays, providing immediate feedback on the student’s performance.
 
 This project combines the simplicity of digital logic with practical hardware design, offering a fully functional OMR machine capable of scanning and evaluating hardcopy answer sheets. With its affordable and scalable design, this solution is well-suited for educational institutions looking for a reliable and efficient way to automate MCQ grading.
+
+
+ 
 </details>
 
 
 <!-- Third Section -->
 ## Functional Block Diagram
 <details>
-![Block Diagram](https://github.com/user-attachments/assets/31ac24a8-9f01-4eeb-97db-a035b567922e)
+  <summary>Detail</summary>
+  
+![img](https://raw.githubusercontent.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/de6605cf381783e2ff518691a0254e5f01ffd6c8/Block%20Diagram.svg)
 
 </details>
+
 
 <!-- Fourth Section -->
 ## Working
@@ -59,7 +65,7 @@ This project combines the simplicity of digital logic with practical hardware de
   > Explain the working of your model with the help of a functional table (compulsory) followed by the flowchart.
 </details>
 
-<!-- Fourth Section -->
+<!-- Fifth Section -->
 ## Logisim Circuit Diagram
 <details>
   <summary>Detail</summary>
@@ -67,7 +73,7 @@ This project combines the simplicity of digital logic with practical hardware de
   > Update a neat logisim circuit diagram
 </details>
 
-<!-- Fifth Section -->
+<!-- Sixth Section -->
 ## Verilog Code
 <details>
   <summary>Detail</summary>
