@@ -41,17 +41,17 @@ The traditional and manual evaluation of hundreds or thousands of OMR answer she
 - **Instant Result Display:** After the scanning process is complete, the total score and the positive score obtained by the student are displayed on seven-segment displays, providing immediate feedback on the student’s performance.
 
 This project combines the simplicity of digital logic with practical hardware design, offering a fully functional OMR machine capable of scanning and evaluating hardcopy answer sheets. With its affordable and scalable design, this solution is well-suited for educational institutions looking for a reliable and efficient way to automate MCQ grading.
-
-### Block Diagram
-
-![Block Diagram](https://github.com/user-attachments/assets/22be5cba-bfe5-49bf-a465-d84a24e0d4fe)
+</details>
 
 
-
+<!-- Third Section -->
+## Functional Block Diagram
+<details>
+  ![Block Diagram](https://github.com/user-attachments/assets/22be5cba-bfe5-49bf-a465-d84a24e0d4fe)
 
 </details>
 
-<!-- Third Section -->
+<!-- Fourth Section -->
 ## Working
 <details>
   <summary>Detail</summary>
