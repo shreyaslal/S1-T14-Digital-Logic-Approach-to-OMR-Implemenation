@@ -42,6 +42,10 @@ The traditional and manual evaluation of hundreds or thousands of OMR answer she
 
 This project combines the simplicity of digital logic with practical hardware design, offering a fully functional OMR machine capable of scanning and evaluating hardcopy answer sheets. With its affordable and scalable design, this solution is well-suited for educational institutions looking for a reliable and efficient way to automate MCQ grading.
 
+![Block Diagram](./Block Diagram.svg)
+
+
+
 </details>
 
 <!-- Third Section -->
