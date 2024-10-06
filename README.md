@@ -47,7 +47,7 @@ This project combines the simplicity of digital logic with practical hardware de
 <!-- Third Section -->
 ## Functional Block Diagram
 <details>
-  ![Block Diagram](https://github.com/user-attachments/assets/22be5cba-bfe5-49bf-a465-d84a24e0d4fe)
+![Block Diagram](https://github.com/user-attachments/assets/31ac24a8-9f01-4eeb-97db-a035b567922e)
 
 </details>
 
