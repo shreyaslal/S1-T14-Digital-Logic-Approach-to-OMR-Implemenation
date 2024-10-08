@@ -52,7 +52,7 @@ This project combines the simplicity of digital logic with practical hardware de
 <details>
   <summary>Detail</summary>
   
-![img](https://raw.githubusercontent.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/de6605cf381783e2ff518691a0254e5f01ffd6c8/Block%20Diagram.svg)
+![img](https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/2b71653ce06b9bfd9641b9a40d2045c4f1e22ab0/Snapshots/S1-T14-BlockDiagram.svg)
 
 </details>
 
