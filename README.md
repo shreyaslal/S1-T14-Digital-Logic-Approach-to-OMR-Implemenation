@@ -103,7 +103,7 @@ shown on a 7-segment display.
 ![img](https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/7b0b968147196d3cd378287562b7e4c58215e3ec/Snapshots/truthtable.png)
 
 ###
-**FLow Chart**
+**Flow Chart**
 ![img](https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/7b0b968147196d3cd378287562b7e4c58215e3ec/Snapshots/Block%20Diagram.svg)
 
 
@@ -114,15 +114,237 @@ shown on a 7-segment display.
 <details>
   <summary>Detail</summary>
 
-  > Update a neat logisim circuit diagram
+  ###
+  The <a href="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/tree/main/Logisim">Logisim</a> folder consists of the Logisim files of the Digital Logic Approach to OMR Implementation.
+
+
+###
+  **Overall Circuit**
+  ![img](https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/6f2e4d220eed3d33b48b72930f3f26435f5be0db/Snapshots/Logisim%20Circuits/S1-T14-Overall.png)
+
+
+###
+###
+  **Quad D Flip-Flop Circuit**
+    <div style="flex: 1; text-align: center;">
+      <img src="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/6f2e4d220eed3d33b48b72930f3f26435f5be0db/Snapshots/Logisim%20Circuits/S1-T14-DFF.png" alt="Quad D Flip-Flop Circuit" width="400px">
+    </div>
+  </div>
+ 
+ ###
+ ###
+ 
+  <div style="display: flex; align-items: center; margin-bottom: 100px; margin-top: 100px;">
+    <div style="flex: 1;">
+      <p><strong>16-Line to 1-Line Data Selector/Multiplexer Circuit</strong></p>
+    </div>
+    <div style="flex: 1; text-align: center; margin-left: 20px;">
+      <img src="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/6f2e4d220eed3d33b48b72930f3f26435f5be0db/Snapshots/Logisim%20Circuits/S1-T14-MUX.png" alt="Multiplexer Circuit" width="400px">
+    </div>
+  </div>
+
+###
+###
+
+  <div style="display: flex; align-items: center; margin-bottom: 100px; margin-top: 100px;">
+    <div style="flex: 1;">
+      <p><strong>12 Stage Ripple Carry Binary Counter Circuit</strong></p>
+    </div>
+    <div style="flex: 1; text-align: center; margin-left: 20px;">
+      <img src="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/6f2e4d220eed3d33b48b72930f3f26435f5be0db/Snapshots/Logisim%20Circuits/S1-T14-COUNTER.png" alt="Binary Counter Circuit" width="400px">
+    </div>
+  </div>
+
+###
+###
+
+  <div style="display: flex; align-items: center; flex-direction: column; margin-bottom: 150px;">
+    <div style="margin-bottom: 10px;">
+      <p><strong>4-bit Magnitude Comparator Circuit</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/6f2e4d220eed3d33b48b72930f3f26435f5be0db/Snapshots/Logisim%20Circuits/S1-T14-COMPARATOR.png" alt="Comparator Circuit" width="400px">
+    </div>
+  </div>
+
+###
+###
+
+  <div style="display: flex; align-items: center; flex-direction: column; margin-bottom: 150px;">
+    <div style="margin-bottom: 10px;">
+      <p><strong>4-bit Full Adder</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/6f2e4d220eed3d33b48b72930f3f26435f5be0db/Snapshots/Logisim%20Circuits/S1-T14-BCD-ADDER.png" alt="Full Adder" width="400px">
+    </div>
+  </div>
+
+###
+###
+
+  <div style="display: flex; align-items: center; flex-direction: column; margin-bottom: 150px;">
+    <div style="margin-bottom: 10px;">
+      <p><strong>BCD to 7-segment Decoder Circuit</strong></p>
+    </div>
+    <div style="text-align: center;">
+      <img src="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/6f2e4d220eed3d33b48b72930f3f26435f5be0db/Snapshots/Logisim%20Circuits/S1-T14-BCD-TO-7.png" alt="Decoder Circuit" width="400px">
+    </div>
+  </div>
+
 </details>
+
 
 <!-- Sixth Section -->
 ## Verilog Code
 <details>
   <summary>Detail</summary>
 
-  > Neatly update the Verilog code in code style only.
+###
+   The <a href="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/tree/main/Logisim">Verilog</a> folder the main file and the test bench file along with the output file.
+###
+
+### Modules
+
+```
+//Design of Digital Systems Mini Project
+//S1 Team 14 - Digital Logic Approach to OMR Implementation
+
+// D Flip-Flop Module
+module D_FlipFlop(
+    input reset,     
+    input [3:0] d,    
+    output reg [3:0] q 
+);
+    always @(reset or d) begin
+        if (reset) begin
+            q <= 4'b0;
+        end else begin
+            q <= d;
+        end
+    end
+endmodule
+
+// Comparator Module
+module Comparator(
+    input [3:0] A,   
+    input [3:0] B,   
+    output equal     
+);
+    assign equal = (A == B);
+endmodule
+
+// OMR Machine Module
+module OMR_Machine(
+    input [39:0] correct_answers, 
+    input [39:0] student_answers, 
+    input reset,    
+    output reg [3:0] score1,              
+    output reg [3:0] score        
+);
+    wire [3:0] stored_answers [9:0];
+    wire [9:0] compare_results;
+    integer j; 
+
+    generate
+        genvar i;
+        for (i = 0; i < 10; i = i + 1) begin : dff_block
+            D_FlipFlop dff (
+                .reset(reset),
+                .d(correct_answers[i*4 +: 4]),
+                .q(stored_answers[i])
+            );
+        end
+    endgenerate
+
+    generate
+        for (i = 0; i < 10; i = i + 1) begin : compare_block
+            Comparator comp (
+                .A(student_answers[i*4 +: 4]),
+                .B(stored_answers[i]),
+                .equal(compare_results[i])
+            );
+        end
+    endgenerate
+
+    always @(*) begin
+        if (reset) begin
+            score = 4'b0; // Reset score
+            score1 = 4'b0;
+        end else begin
+            score = 4'b0; // Initialize score
+            score1 = 4'b0;
+            for (j = 0; j < 10; j = j + 1) begin
+                if (compare_results[j]) begin
+                    score = score + 4'b0001; // Count correct answers
+                end else begin
+                    score1 = score1 + 4'b0001;
+                end   
+            end
+            if(score >= score1) begin
+                score = score - score1;
+            end else begin
+                score = 4'b0;
+            end
+        end
+    end
+endmodule
+```
+
+### Testbench
+
+```
+module OMR_Machine_tb;
+    reg [39:0] correct_answers; 
+    reg [39:0] student_answers; 
+    reg reset; 
+    wire [3:0] score1;                 
+    wire [3:0] score;           
+
+    OMR_Machine uut (
+        .correct_answers(correct_answers),
+        .student_answers(student_answers),
+        .reset(reset),
+        .score1(score1),
+        .score(score)
+    );
+
+    initial begin
+        reset = 1;
+        correct_answers = 40'b0001_0010_0011_0100_0101_0110_0111_1000_1001_1010; 
+        student_answers = 40'b0000; 
+        
+        #10 reset = 0; 
+
+        // Test Case 1: All correct answers
+        student_answers = 40'b0001_0010_0011_0100_0101_0110_0111_1000_1001_1010; // Score = 10
+        #10; 
+        $display("Test Case 1: Score = %d", score); // Display score
+
+        // Test Case 2: 7 correct answers and 3 incorrect answers
+        student_answers = 40'b0001_0010_0011_0100_0000_0110_0111_0000_1001_0000; // Score = 4
+        #10; 
+        $display("Test Case 2: Score = %d", score); // Display score
+
+        // Test Case 3: 8 correct answers and 2 incorrect answers
+        student_answers = 40'b0001_0010_0011_0100_0101_0110_0111_0000_1001_0000; // Score = 6
+        #10; 
+        $display("Test Case 3: Score = %d", score); // Display score
+
+        // Test Case 4: 2 correct answers and 8 incorrect Answers
+        student_answers = 40'b1000_0100_0010_0001_0101_0110_0100_0010_0001_0010; // Score = 0
+        #10; 
+        $display("Test Case 4: Score = %d", score); // Display score
+
+        // Test Case 5: Not Attempted
+        student_answers = 40'b0000_0000_0000_0000_0000_0000_0000_0000_0000_0000; // Score = 0
+        #10; 
+        $display("Test Case 5: Score = %d", score); // Display score
+
+        $finish;
+    end
+endmodule
+```
+
 </details>
 
 
