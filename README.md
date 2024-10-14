@@ -97,6 +97,15 @@ is then used to calculate the total score by subtracting the number of incorrect
 number of correct ones. If the result is negative, the final score is displayed as zero. The score is
 shown on a 7-segment display.
 
+###
+**Truth Table**
+###
+![img](https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/7b0b968147196d3cd378287562b7e4c58215e3ec/Snapshots/truthtable.png)
+
+###
+**FLow Chart**
+![img](https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/7b0b968147196d3cd378287562b7e4c58215e3ec/Snapshots/Block%20Diagram.svg)
+
 
 </details>
 
