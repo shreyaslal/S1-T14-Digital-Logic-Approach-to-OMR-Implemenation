@@ -61,21 +61,19 @@ awarding +1 for each correct answer and -1 for each incorrect answer. If the fin
 it is displayed as 0; otherwise, the calculated score is shown. Each question has four options (A, B,
 C, and D), with only one correct answer.
 
-
-
+###
 4-bit D-Flip Flops are used to store the correct answers, with each question having its own
 corresponding D-Flip Flop to store the answer. This system is implemented for up to ten questions,
 but the number of questions can be scaled as needed. Additionally, we can choose to evaluate fewer
 than ten questions for a particular exam if required.
 
-
+###
 There are four 16:1 multiplexers, one for each option, with the question number currently being
 evaluated as their select line. These multiplexers determine whether the corresponding option is
 correct for the question being evaluated.
 
-
-We have developed a small-scale OMR (Optical Mark Recognition) sheet scanner using LightDependent Resistors (LDRs) and LEDs. These components are positioned on opposite sides—LEDs
-on top and LDRs on the bottom—where the answer sheet is inserted for scanning. The answer sheet
+###
+We have developed a small-scale OMR (Optical Mark Recognition) sheet scanner using LightDependent Resistors (LDRs) and LEDs. These components are positioned on opposite sides—LEDs on top and LDRs on the bottom—where the answer sheet is inserted for scanning. The answer sheet
 includes four options for each question, and the correct option must be shaded using a pencil. When
 a circle corresponding to an option is shaded, less light from the LEDs passes through the shaded
 option compared to the unshaded options. This causes an increase in the resistance of the LDR
@@ -83,7 +81,7 @@ associated with the marked option. A circuit is then designed to detect this cha
 generate an ”ON” signal, indicating that the option is marked. This process is repeated for each
 question.
 
-
+###
 To help the circuit detect when responses for the next question are being scanned, a fifth circle
 is always shaded. As the paper slides forward for the next question, the LDR beneath this shaded
 circle temporarily detects an unshaded area between questions, resulting in reduced resistance. This
@@ -93,7 +91,7 @@ using a 4-bit comparator. If the marked answer is correct, a counter is incremen
 number of correctly answered questions. A real-time display using a 7-segment display shows the
 count of correct answers.
 
-
+###
 Additionally, a separate counter records the number of incorrect answers. A 4-bit subtractor
 is then used to calculate the total score by subtracting the number of incorrect answers from the
 number of correct ones. If the result is negative, the final score is displayed as zero. The score is
