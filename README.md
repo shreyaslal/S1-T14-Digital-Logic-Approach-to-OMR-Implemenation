@@ -61,7 +61,8 @@ awarding +1 for each correct answer and -1 for each incorrect answer. If the fin
 it is displayed as 0; otherwise, the calculated score is shown. Each question has four options (A, B,
 C, and D), with only one correct answer.
 
-  
+
+
 4-bit D-Flip Flops are used to store the correct answers, with each question having its own
 corresponding D-Flip Flop to store the answer. This system is implemented for up to ten questions,
 but the number of questions can be scaled as needed. Additionally, we can choose to evaluate fewer
