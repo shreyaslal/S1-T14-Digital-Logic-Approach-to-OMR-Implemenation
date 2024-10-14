@@ -55,6 +55,8 @@ The manual evaluation of hundreds or thousands of OMR answer sheets in large-sca
 ## Working
 <details>
   <summary>Detail</summary>
+  
+###
 This project is designed to calculate the final scores of scanned OMR answer sheets by comparing
 them with pre-stored correct answers, which are set by the user initially. The score is determined by
 awarding +1 for each correct answer and -1 for each incorrect answer. If the final score is negative,
