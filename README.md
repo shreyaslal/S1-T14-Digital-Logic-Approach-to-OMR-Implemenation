@@ -349,5 +349,18 @@ endmodule
 
 </details>
 
+<!-- Fifth Section -->
+## References
+<details>
+  <summary>Detail</summary>
+
+  ###
+
+
+1. [Optical Mark Recognition (OMR)](https://dmohankumar.wordpress.com/2010/11/06/optical-mark-recognition-omr/)  
+2. [Light Dependent Resistors (LDR) Basics](https://www.electronicsforu.com/technology-trends/learn-electronics/ldr-light-dependent-resistors-basics)  
+
+</details>
+
 
 
