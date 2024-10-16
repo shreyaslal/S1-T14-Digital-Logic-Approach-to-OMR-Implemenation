@@ -202,7 +202,7 @@ shown on a 7-segment display.
   <summary>Detail</summary>
 
 ###
-   The <a href="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/tree/main/Logisim">Verilog</a> folder the main file and the test bench file along with the output file.
+   The <a href="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/tree/main/Verilog">Verilog</a> folder the main file and the test bench file along with the output file.
 ###
 
 ### Modules
