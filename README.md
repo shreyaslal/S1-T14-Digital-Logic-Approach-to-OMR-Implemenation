@@ -122,7 +122,7 @@ shown on a 7-segment display.
 
 ###
   **Overall Circuit**
-  ![img](https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/blob/6f2e4d220eed3d33b48b72930f3f26435f5be0db/Snapshots/Logisim%20Circuits/S1-T14-Overall.png)
+  ![img](https://github.com/shreyaslal/S1-T14-Digital-Logic-Approach-to-OMR-Implemenation/blob/509a54a92d413f20ce54a8d02a9cdd3eb7dc028f/Snapshots/Logisim%20Circuits/S1-T14-Overall.png)
 
 
 ###
