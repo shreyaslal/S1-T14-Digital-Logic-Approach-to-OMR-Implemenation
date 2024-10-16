@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.100 (w)1999-2019 BSI
+[*] Wed Oct 16 17:04:25 2024
+[*]
+[dumpfile] "C:\Users\Asus\OneDrive\Desktop\Programming-Resources\Verilog\Mini-Project\S1-T14_behavioral.vcd"
+[dumpfile_mtime] "Wed Oct 16 17:03:34 2024"
+[dumpfile_size] 7069
+[savefile] "C:\Users\Asus\OneDrive\Desktop\Programming-Resources\Verilog\Mini-Project\S1-T14_behavioral.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-4.757188 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 198
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@22
+OMR_Machine_tb.correct_answers[39:0]
+@28
+OMR_Machine_tb.reset
+@22
+OMR_Machine_tb.score[3:0]
+OMR_Machine_tb.score_neg[3:0]
+OMR_Machine_tb.student_answers[39:0]
+[pattern_trace] 1
+[pattern_trace] 0

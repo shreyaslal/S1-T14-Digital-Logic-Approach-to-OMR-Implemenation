@@ -1,0 +1,455 @@
+$date
+	Wed Oct 16 22:33:34 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module OMR_Machine_tb $end
+$var wire 4 ! score_neg [3:0] $end
+$var wire 4 " score [3:0] $end
+$var reg 40 # correct_answers [39:0] $end
+$var reg 1 $ reset $end
+$var reg 40 % student_answers [39:0] $end
+$scope module uut $end
+$var wire 40 & correct_answers [39:0] $end
+$var wire 1 $ reset $end
+$var wire 40 ' student_answers [39:0] $end
+$var wire 10 ( compare_results [9:0] $end
+$var reg 4 ) score [3:0] $end
+$var reg 4 * score_neg [3:0] $end
+$var integer 32 + j [31:0] $end
+$scope begin compare_block[0] $end
+$var parameter 2 , i $end
+$scope module comp $end
+$var wire 4 - A [3:0] $end
+$var wire 1 . equal $end
+$var wire 4 / B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[1] $end
+$var parameter 2 0 i $end
+$scope module comp $end
+$var wire 4 1 A [3:0] $end
+$var wire 1 2 equal $end
+$var wire 4 3 B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[2] $end
+$var parameter 3 4 i $end
+$scope module comp $end
+$var wire 4 5 A [3:0] $end
+$var wire 1 6 equal $end
+$var wire 4 7 B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[3] $end
+$var parameter 3 8 i $end
+$scope module comp $end
+$var wire 4 9 A [3:0] $end
+$var wire 1 : equal $end
+$var wire 4 ; B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[4] $end
+$var parameter 4 < i $end
+$scope module comp $end
+$var wire 4 = A [3:0] $end
+$var wire 1 > equal $end
+$var wire 4 ? B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[5] $end
+$var parameter 4 @ i $end
+$scope module comp $end
+$var wire 4 A A [3:0] $end
+$var wire 1 B equal $end
+$var wire 4 C B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[6] $end
+$var parameter 4 D i $end
+$scope module comp $end
+$var wire 4 E A [3:0] $end
+$var wire 1 F equal $end
+$var wire 4 G B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[7] $end
+$var parameter 4 H i $end
+$scope module comp $end
+$var wire 4 I A [3:0] $end
+$var wire 1 J equal $end
+$var wire 4 K B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[8] $end
+$var parameter 5 L i $end
+$scope module comp $end
+$var wire 4 M A [3:0] $end
+$var wire 1 N equal $end
+$var wire 4 O B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin compare_block[9] $end
+$var parameter 5 P i $end
+$scope module comp $end
+$var wire 4 Q A [3:0] $end
+$var wire 1 R equal $end
+$var wire 4 S B [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[0] $end
+$var parameter 2 T i $end
+$scope module dff $end
+$var wire 4 U d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 V q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[1] $end
+$var parameter 2 W i $end
+$scope module dff $end
+$var wire 4 X d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 Y q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[2] $end
+$var parameter 3 Z i $end
+$scope module dff $end
+$var wire 4 [ d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 \ q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[3] $end
+$var parameter 3 ] i $end
+$scope module dff $end
+$var wire 4 ^ d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 _ q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[4] $end
+$var parameter 4 ` i $end
+$scope module dff $end
+$var wire 4 a d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 b q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[5] $end
+$var parameter 4 c i $end
+$scope module dff $end
+$var wire 4 d d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 e q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[6] $end
+$var parameter 4 f i $end
+$scope module dff $end
+$var wire 4 g d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 h q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[7] $end
+$var parameter 4 i i $end
+$scope module dff $end
+$var wire 4 j d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 k q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[8] $end
+$var parameter 5 l i $end
+$scope module dff $end
+$var wire 4 m d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 n q [3:0] $end
+$upscope $end
+$upscope $end
+$scope begin dff_block[9] $end
+$var parameter 5 o i $end
+$scope module dff $end
+$var wire 4 p d [3:0] $end
+$var wire 1 $ reset $end
+$var reg 4 q q [3:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1001 o
+b1000 l
+b111 i
+b110 f
+b101 c
+b100 `
+b11 ]
+b10 Z
+b1 W
+b0 T
+b1001 P
+b1000 L
+b111 H
+b110 D
+b101 @
+b100 <
+b11 8
+b10 4
+b1 0
+b0 ,
+$end
+#0
+$dumpvars
+b0 q
+b1 p
+b0 n
+b10 m
+b0 k
+b10 j
+b0 h
+b100 g
+b0 e
+b100 d
+b0 b
+b100 a
+b0 _
+b1 ^
+b0 \
+b1000 [
+b0 Y
+b1000 X
+b0 V
+b1000 U
+b0 S
+1R
+b0 Q
+b0 O
+1N
+b0 M
+b0 K
+1J
+b0 I
+b0 G
+1F
+b0 E
+b0 C
+1B
+b0 A
+b0 ?
+1>
+b0 =
+b0 ;
+1:
+b0 9
+b0 7
+16
+b0 5
+b0 3
+12
+b0 1
+b0 /
+1.
+b0 -
+bx +
+b0 *
+b0 )
+b1111111111 (
+b0 '
+b1001000100100010001000001100010001000 &
+b0 %
+1$
+b1001000100100010001000001100010001000 #
+b0 "
+b0 !
+$end
+#10
+b1000 /
+b1000 V
+b1000 3
+b1000 Y
+b1000 7
+b1000 \
+b1 ;
+b1 _
+b100 ?
+b100 b
+b100 C
+b100 e
+b100 G
+b100 h
+b10 K
+b10 k
+b10 O
+b10 n
+b1 S
+b1 q
+b0 !
+b0 *
+1.
+b1000 -
+12
+b1000 1
+16
+b1000 5
+1:
+b1 9
+1>
+b100 =
+1B
+b100 A
+1F
+b100 E
+1J
+b10 I
+1N
+b10 M
+b1111111111 (
+1R
+b1 Q
+b1010 "
+b1010 )
+b1010 +
+b1001000100100010001000001100010001000 %
+b1001000100100010001000001100010001000 '
+0$
+#20
+b100 !
+b100 *
+b1010 +
+b10 "
+b10 )
+0.
+b1 -
+06
+b10 5
+0>
+b10 =
+b1101101010 (
+0J
+b1 I
+b1001000010100010000100001001010000001 %
+b1001000010100010000100001001010000001 '
+#30
+b1010 +
+b10 !
+b10 *
+b110 "
+b110 )
+1.
+b1000 -
+16
+b1000 5
+0F
+b10 E
+b1110101111 (
+1J
+b10 I
+b1001000100010010000100001100010001000 %
+b1001000100010010000100001100010001000 '
+#40
+b1010 +
+b1001 !
+b1001 *
+b0 "
+b0 )
+0.
+b10 -
+02
+b1 1
+06
+b10 5
+0:
+b100 9
+0B
+b101 A
+b1 E
+0N
+b100 M
+b10000000 (
+0R
+b1000 Q
+b1000010000100001010100100100001000010010 %
+b1000010000100001010100100100001000010010 '
+#50
+b1000 "
+b1000 )
+b1010 +
+b1 !
+b1 *
+b1 -
+12
+b1000 1
+16
+b1000 5
+1:
+b1 9
+1>
+b100 =
+1B
+b100 A
+1F
+b100 E
+1N
+b10 M
+b1111111110 (
+1R
+b1 Q
+b1001000100100010001000001100010000001 %
+b1001000100100010001000001100010000001 '
+#60
+b1010 +
+b101 !
+b101 *
+b0 "
+b0 )
+1.
+b1000 -
+06
+b100 5
+0>
+b10 =
+0B
+b1000 A
+0N
+b1 M
+b11001011 (
+0R
+b1000 Q
+b1000000100100100100000100001010010001000 %
+b1000000100100100100000100001010010001000 '
+#70
+b1 A
+b100 M
+b1000010000100100000100100001010010001000 %
+b1000010000100100000100100001010010001000 '
+#80
+b1000 "
+b1000 )
+b1010 +
+b1 !
+b1 *
+0.
+b100 -
+16
+b1000 5
+1>
+b100 =
+1B
+b100 A
+1N
+b10 M
+b1111111110 (
+1R
+b1 Q
+b1001000100100010001000001100010000100 %
+b1001000100100010001000001100010000100 '
+#90
