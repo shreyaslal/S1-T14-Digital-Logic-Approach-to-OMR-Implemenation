@@ -119,6 +119,24 @@ shown on a 7-segment display.
   ###
   The <a href="https://github.com/shreyaslal/Team-S1-T14-for-DDS-Miniproject-/tree/main/Logisim">Logisim</a> folder consists of the Logisim files of the Digital Logic Approach to OMR Implementation.
 
+```
+  1. Reset the Circuit: Set the RESET button to 0 to initialize the entire circuit.
+  2. Input Configuration: 
+     - For any label marked zero or one, set the corresponding inputs in comparators, BCD adder, enable, and clear for multiplexers and wherever applicable.
+  3. Clock Settings: Ensure all clocks are set to 1 for each question.
+  4. DIP Switch Configuration:
+     - If the correct answer for Question 1 is A, turn off DIP switch A and turn on all other switches. 
+     - Then, set the clock for that specific question to 0, and back to 1. 
+     - Repeat this process for all 10 questions.
+  5. Set LDR Input for Scanned Answer Button: For each question, activate one of the input buttons (A, B, C, or D) corresponding to the student response.
+  6. LDR Input Procedure:
+     - Press 1 in the LDR input for the question. The score will increment/decrement after this action.
+     - After reviewing the score, reset the LDR input to 0, then press 1 again for the next question. 
+     - Ensure that the student response for the next question is set in the LDR input for scanned answers before moving to the next question.
+  7. Final Reset: After scanning all 10 questions, set the reset button back to 0.
+
+```
+
 
 ###
   **Overall Circuit**
