@@ -663,7 +663,9 @@ endmodule
 <details>
   <summary>Detail</summary>
 
-  
+###
+
+ ![img](https://github.com/shreyaslal/S1-T14-Digital-Logic-Approach-to-OMR-Implemenation/blob/de0f0e6d051055211cf16a409669c48d02d78d02/Snapshots/Logisim%20Circuits/S1_T14_Simplified%20Circuit.png)  
   
 
 </details>
