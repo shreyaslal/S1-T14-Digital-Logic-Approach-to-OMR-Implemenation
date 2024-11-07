@@ -112,6 +112,63 @@ shown on a 7-segment display.
 </details>
 
 <!-- Fifth Section -->
+## Design
+<details>
+  <summary>Detail</summary>
+  
+  ### 1. **Dip Switch Module (Correct Answer Setting)**
+   - **Purpose**: This module sets the correct answer for each question.
+   - **Design**: Each question’s correct answer can be set using a 4-bit DIP switch (one for each option: A, B, C, and D). For each question, only one of these switches will be active to denote the correct answer.
+   - **Working**: The DIP switches are manually set to represent the correct answers. During the evaluation, these switches' outputs are compared with the student’s answer.
+
+### 2. **Clock Module**
+   - **Purpose**: To synchronize and sequence operations throughout the circuit.
+   - **Design**: This clock signal pulses at a regular interval, advancing the state of flip-flops or counters, enabling the circuit to move from one question to the next in a sequential manner.
+   - **Working**: Every clock pulse triggers components that help process the current question, moving on to the next question upon receiving the next pulse. This sequential processing is crucial for handling multiple questions in a timed manner.
+
+### 3. **Question Number Selector Module**
+   - **Purpose**: To keep track of the question currently being processed.
+   - **Design**: This module typically consists of a counter, which increments with each clock pulse to represent the question number.
+   - **Working**: The question counter enables the circuit to use the corresponding DIP switch configuration for each specific question. This way, the circuit knows which question’s correct answer to compare with the student’s answer.
+
+### 4. **LDR (Light Dependent Resistor) Inputs / Scanned Answer Module**
+   - **Purpose**: To read and interpret the answers selected by the student.
+   - **Design**: This module uses LDRs as input sensors for each answer option (A, B, C, D). LDRs detect marks on an OMR sheet, simulating the selection of an answer.
+   - **Working**: If a particular option (A, B, C, or D) is selected on the OMR sheet, the corresponding LDR will detect it and register a response for that option. The circuit then compares this scanned answer with the correct answer set by the DIP switches.
+
+### 5. **Comparator Module**
+   - **Purpose**: To determine if the student’s response matches the correct answer.
+   - **Design**: Each comparator compares the output of the DIP switch (correct answer) with the scanned answer (student’s selected option).
+   - **Working**: If the correct answer and the scanned answer match, the comparator outputs a high signal, indicating a correct response. Otherwise, it outputs a low signal. This result is then used to calculate the score.
+
+### 6. **Score Counter Module**
+   - **Purpose**: To maintain a count of the correct answers.
+   - **Design**: This module uses a counter to track the number of correct answers based on the comparator’s output.
+   - **Working**: Each time the comparator outputs a high signal (correct answer), the counter increments by one. This value represents the total number of correct responses and feeds into the final score calculation.
+
+### 7. **BCD (Binary-Coded Decimal) Adder Modules**
+   - **Purpose**: To perform arithmetic operations for scoring, including handling correct answers and incorporating negative marking for incorrect answers.
+   - **Design**: BCD adders are used here to handle decimal arithmetic for scoring, avoiding direct binary calculations, which may complicate score display.
+   - **Working**: The BCD adder sums up correct responses and adjusts the score by deducting points for wrong answers (negative marking). The adder provides the intermediate and final score as a BCD output, which can be easily displayed on the seven-segment displays.
+
+### 8. **Negative Marking Module**
+   - **Purpose**: To adjust the score by penalizing incorrect answers, implementing a "negative marking" scheme.
+   - **Design**: This module works with additional logic gates and possibly another BCD adder/subtractor to deduct points for wrong answers.
+   - **Working**: When the comparator outputs a low signal (incorrect answer), this module triggers a penalty that subtracts points from the total score. This penalty amount can be set based on the exam rules (e.g., -1 for each wrong answer).
+
+### 9. **Output Display Module**
+   - **Purpose**: To show the final score and the total number of correct responses.
+   - **Design**: This module uses seven-segment displays connected to the BCD outputs from the score counter and the BCD adder.
+   - **Working**: One display shows the total correct responses without penalties, while the other shows the final score, including any deductions for incorrect answers. The seven-segment display driver decodes the BCD output to display the score as a human-readable number.
+
+### 10. **Control Logic and Reset Module**
+   - **Purpose**: To reset the entire circuit and initialize it for a new OMR evaluation.
+   - **Design**: The reset module connects to all key components like counters, adders, and flip-flops to clear their values.
+   - **Working**: When the reset button is pressed, all stored values and intermediate results are cleared. This prepares the circuit for a fresh set of question processing.
+
+</details
+
+<!-- Sixth Section -->
 ## Logisim Circuit Diagram
 <details>
   <summary>Detail</summary>
@@ -214,7 +271,7 @@ shown on a 7-segment display.
 </details>
 
 
-<!-- Sixth Section -->
+<!-- Seventh Section -->
 ## Verilog Code
 <details>
   <summary>Detail</summary>
@@ -601,7 +658,17 @@ endmodule
 ```
 </details>
 
-<!-- Fifth Section -->
+<!-- Eighth Section -->
+## Hardware Implementation
+<details>
+  <summary>Detail</summary>
+
+  
+  
+
+</details>
+
+<!-- Ninth Section -->
 ## References
 <details>
   <summary>Detail</summary>
