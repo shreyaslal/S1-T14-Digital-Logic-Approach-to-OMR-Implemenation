@@ -512,7 +512,7 @@ module OMR_Machine(
 endmodule
 ```
 
-### Testbench
+### Testbench Code for Behavioral and Gate Level
 
 #### Behavioral
 
